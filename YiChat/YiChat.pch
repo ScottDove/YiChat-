@@ -1,0 +1,43 @@
+//
+//  YiChat.pch
+//  YiChat
+//
+//  Created by 孙 化育 on 15-1-27.
+//  Copyright (c) 2015年 孙 化育. All rights reserved.
+//
+
+#ifndef YiChat_YiChat_pch
+#define YiChat_YiChat_pch
+
+#import "UIWindow+YzdHUD.h"
+#import "NetworkTool.h"
+#import "CommonTool.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+#define USER_API @"http://127.0.0.1:8080/st/s"
+
+#define NEWS_API @"http://127.0.0.1:8080/st/news/news_list.json"
+
+#define PIC_URL_ADDRESS @"http://127.0.0.1:8080/st"
+
+#define SERVER_ADDRESS @"http://127.0.0.1:8080"
+
+
+#define APP_WINDOW [[[UIApplication sharedApplication] delegate] window]
+
+#define USER_D [NSUserDefaults standardUserDefaults]
+
+#define FILE_M [NSFileManager defaultManager]
+
+#define SHOW_ALERT(msg) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];\
+[alert show];\
+[alert release];
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
